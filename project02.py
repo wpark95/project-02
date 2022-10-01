@@ -1,5 +1,10 @@
 #!/usr/bin/python3
-"""Will Park | Heist / Escape RPG Game (Python Project 2)"""
+"""
+Will Park | Heist / Escape RPG Game (Python Project 2)
+
+A text-based heist and escape game where the player has to
+find a certain item in a room and escape to win.
+"""
 
 def show_game_info():
     """Print game information"""
