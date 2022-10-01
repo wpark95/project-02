@@ -181,6 +181,9 @@ while True:
     while command == "":  
         command = input("Enter your next command\n>>> ").strip()
 
+    # print empty lines for better readability
+    print("\n\n")
+
     # normalizing input:
     # .lower() makes it lower case, .split() turns it to a list
     # therefore, "get golden key" becomes ["get", "golden key"]          
@@ -239,11 +242,11 @@ while True:
                 del rooms[current_room]["person"]
                 # player tases the guard and can continue the game
                 print() # print an empty line for better readability
-                print("Guard! You saw the guard first and tased him.")
+                print("Nice try, guard! You saw the enemy first and tased him.")
             # if the player does not have taser in the inventory
             else:
                 # the guard shoots them and the player loses the game
-                print("The guard saw you first and shot you.")
+                print("Oh shoot! The guard saw you first and shot you with a handgun.")
                 print("--- You Lost ---")
                 break
     
